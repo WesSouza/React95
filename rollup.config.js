@@ -12,7 +12,7 @@ const baseBundle = {
     replace({
       'process.env.NODE_ENV': JSON.stringify(NODE_ENV)
     }),
-    esbuild({ loaders: { '.js': 'jsx' } })
+    esbuild()
   ]
 };
 
